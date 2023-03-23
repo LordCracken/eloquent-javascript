@@ -8,7 +8,7 @@ const dominantDirection = text => {
 
   if (scripts.length === 0) return 'No scripts found';
 
-  return scripts.reduce((a, b) => a.count > b.count ? a : b).name;
+  return scripts.reduce((a, b) => (a.count > b.count ? a : b)).name;
 };
 
 console.log(dominantDirection('Hello!'));
